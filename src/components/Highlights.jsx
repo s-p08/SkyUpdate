@@ -11,7 +11,7 @@ import { IoMdEye } from "react-icons/io";
 import Aqi from "./Aqi";
 import Map from "./Map";
 const Highlights = () => {
-  
+
   const { weatherData, airQuality, tempType } = useWeather();
   const [timeZone, setTimeZone] = useState(null);
 
@@ -119,14 +119,14 @@ const Highlights = () => {
           </div>
         </div>
         <div className="col-start-3 row-start-2 bg-white dark:bg-slate-900 rounded-3xl p-2 shadow-lg hover:shadow-2xl flex flex-col items-center">
-        <h1 className="text-lg text-gray-500 dark:text-white font-normal">Visibility</h1>
+          <h1 className="text-lg text-gray-500 dark:text-white font-normal">Visibility</h1>
           <div className="flex flex-col items-center">
             <IoMdEye className="text-amber-400 text-7xl" />{" "}
             <p className="text-2xl">{visibility} km</p>
           </div>
         </div>
         <div className="row-span-2 col-start-4 row-start-1 bg-white dark:bg-slate-900 rounded-3xl shadow-lg hover:shadow-2xl">
-          <Map/>
+          <Map />
         </div>
       </div>
     </div>

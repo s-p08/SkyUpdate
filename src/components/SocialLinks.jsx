@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaSquareGithub } from "react-icons/fa6";
+ import { FaSquareGithub } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
 
 import { MdDarkMode } from "react-icons/md";
@@ -7,7 +7,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { useDarkMode } from "../context/DarkModeContext";
 const SocialLinks = () => {
   const linkedinUrl = "https://www.linkedin.com/in/shivam-prakash-772727306";
-  const githubUrl = "https://github.com/s-p08";
+  // const githubUrl = "https://github.com/s-p08";
 
   const { darkMode, toggleMode } = useDarkMode();
 
@@ -23,10 +23,10 @@ const SocialLinks = () => {
             onClick={() => handleClick(linkedinUrl)}
             className="hover:cursor-pointer transition transform ease-in-out duration-300 hover:scale-105"
           />
-          <FaSquareGithub
+          {/* <FaSquareGithub
             onClick={() => handleClick(githubUrl)}
             className="hover:cursor-pointer transition transform ease-in-out duration-300 hover:scale-105"
-          />
+          /> */}
 
         </div>
         <div className="text-2xl bg-black text-white dark:bg-white dark:text-black rounded-md p-1  cursor-pointer" onClick={toggleMode}>
